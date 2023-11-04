@@ -1,5 +1,5 @@
 const startBtn = document.getElementById('button');
 
 startBtn.onclick = () =>{
-    location.href = "./introduction.html";
+    location.href = "introduction.html";
 }

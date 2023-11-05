@@ -62,7 +62,7 @@ p{
     border-radius: 10px;
    }
 
-   /* glow */
+   /* glow in btn */
    .btn::before {
     content: "";
     background: linear-gradient(

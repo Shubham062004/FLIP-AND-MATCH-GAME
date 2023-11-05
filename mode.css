@@ -8,7 +8,6 @@
 
 body{
     font-family: 'Bubblegum Sans', sans-serif;
-    font-size: 50px;
     background-image: url(assests/front-page-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,20 +24,55 @@ body{
     /* margin: 40px; */
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 85%;
 
 }
 
 .innermode{
-    border: 2px solid black;
-    height: 500px;
-    width: 30%;
-}
-
-.heading{
-    margin: 40px;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid rgb(253,48,226);
 }
 
 img{
     height: 300px;
     width: 300px;
 }
+
+h1{
+    font-size: 40px;
+}
+
+.heading{
+    font-size: 100px;
+    margin: 40px;
+}
+
+#coder{
+    background-image: url("assests/coder.jpg");
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 6px );
+}
+
+#zombie{
+    background-image: url("assests/zombie.jpg");
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 6px );
+}
+
+#game{
+    background-image: url("assests/game.png");
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 6px );
+}
+
+#nature{
+    background-image: url("assests/nature.jpg");
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 6px );
+}
+

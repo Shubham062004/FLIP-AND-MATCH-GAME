@@ -1,3 +1,4 @@
+// Move to intro page
 const startBtn = document.getElementById('button');
 
 startBtn.onclick = () =>{

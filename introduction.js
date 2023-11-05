@@ -1,3 +1,4 @@
+// move to user info page
 const continueBtn = document.getElementById('btn');
 
 continueBtn.onclick = () =>{

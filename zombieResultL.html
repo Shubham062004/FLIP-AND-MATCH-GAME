@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./zombieResultL.css">
+    <style type="text/css">
+        /* Style to GameOver Page */
+        .g {
+            transform: translate(6px, 50px) rotate(-25deg);
+        }
+
+        .a {
+            transform: translate(3px, 14px) rotate(-21deg);
+        }
+        
+        .m {
+            transform: translate(2px, -9px) rotate(-14deg);
+        }
+        
+        .e {
+            transform: translate(-3px, -25px) rotate(-7deg);
+        }
+        
+        .o {
+            transform: translate(-3px, -25px) rotate(7deg); 
+        }
+        
+        .v {
+            transform: translate(-2px, -9px) rotate(14deg); 
+        }
+        
+        .e1{
+            transform: translate(-3px, 14px) rotate(21deg);
+        }
+        
+        .r{
+            transform: translate(-6px, 50px) rotate(25deg);
+        }
+        span { 
+			display: inline-block; 
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Gameover text -->
+        <div class="gameover"> 
+            <span class="g">G</span> 
+            <span class="a">A</span> 
+            <span class="m">M</span> 
+            <span class="e">E</span> 
+            <span class="o">O</span> 
+            <span class="v">V</span> 
+            <span class="e1">E</span> 
+            <span class="r">R</span>
+        </div> 
+
+        <!-- RIP Image -->
+        <div class="rip">
+            <h2></h2>
+
+            <!-- restart button -->
+            <button class="" id="restartBtn">
+                <span></span>
+            </button>
+            
+            <!-- menu Button -->
+            <button class="restartBtn marBot" id="menuBtn">
+                <span>RESTART</span>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="./zombieResultL.js"></script>
+</html>

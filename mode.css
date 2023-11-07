@@ -30,12 +30,14 @@ body{
 }
 
 .innermode{
-    height: 600px;
+    height: 570px;
     width: 300px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     border: 5px solid rgb(253,48,226);
+    margin-bottom: 30px;
 }
 
 img{
@@ -52,6 +54,11 @@ h1{
     margin: 40px;
 }
 
+#zombiePlay, #gamePlay, #naturePlay, #coderPlay, h1{
+    margin: 50px;
+}
+
+/* 
 #coder{
     background-image: url("assests/coder.jpg");
     background: rgba( 255, 255, 255, 0.2 );
@@ -74,5 +81,29 @@ h1{
     background-image: url("assests/nature.jpg");
     background: rgba( 255, 255, 255, 0.2 );
     backdrop-filter: blur( 6px );
+} */
+
+/* background image of modes */
+#coder{
+    background-image: url("./assests/coder-mode-bg.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
 }
 
+#zombie{
+    background-image: url("./assests/zombie-mode-bg.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+#game{
+    background-image: url("./assests/game-mode-bg.png");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+#nature{
+    background-image: url("./assests/nanture-mode-bg.png");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}

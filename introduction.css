@@ -117,3 +117,9 @@ p{
     font-size: 25px;
     margin-bottom: 40px;
    }
+
+   @media screen and (max-width: 400px) {
+        p{
+            font-size: 40px;
+        }
+    }

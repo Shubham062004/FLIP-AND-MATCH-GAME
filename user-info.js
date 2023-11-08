@@ -25,3 +25,6 @@ playButton.onclick = () => {
         location.href = "./mode.html"
     }
 }
+
+const bgmAudio = new Audio('./assests/index-instr-bgm.mp3')
+bgmAudio.play()

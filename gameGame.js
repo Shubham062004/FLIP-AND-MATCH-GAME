@@ -1,8 +1,10 @@
-const bgm = new Audio('./assests/bgm.mp3');
+const bgm = new Audio('./assests/game-bgm.mp3');
 const flipAudio = new Audio('./assests/flip.mp3');
+const ohno = new Audio('./assests/oh-no.mp3');
+
 bgm.play();
 bgm.loop = true;
-bgm.volume = 0.4;
+bgm.volume = 0.8;
 
 const cards = document.querySelectorAll(".card");
 const timeTag = document.querySelector(".time b");
@@ -66,6 +68,8 @@ function matchCards(img1, img2) {
     disableDeck = false;
   } else {
     setTimeout(() => {
+      ohno.play();
+      ohno.volume = 0.8;
       cardOne.classList.add("shake");
       cardTwo.classList.add("shake");
     }, 400);

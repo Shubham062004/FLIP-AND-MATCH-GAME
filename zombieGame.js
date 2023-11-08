@@ -1,4 +1,4 @@
-const bgm = new Audio('./assests/bgm.mp3');
+const bgm = new Audio('./assests/zombie-bgm.mp3');
 const flipAudio = new Audio('./assests/flip.mp3');
 const ohno = new Audio('./assests/oh-no.mp3');
 bgm.play();
@@ -69,7 +69,7 @@ function matchCards(img1, img2) {
   } else {
     setTimeout(() => {
       ohno.play();
-      ohno.volume = 0.2;
+      ohno.volume = 0.8;
       cardOne.classList.add("shake");
       cardTwo.classList.add("shake");
     }, 400);

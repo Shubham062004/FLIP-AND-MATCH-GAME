@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body{
@@ -23,58 +24,9 @@ body{
     align-items: center;
 }
 
-.spider {
-    position: absolute;
-    filter: invert(10%);
-    top: -300px;
-    animation: spiderman 5s ease-in infinite;
-    scale: 0.5;
-}
-
-@keyframes spiderman {
-    0%
-    {
-        transform: translateX(-1500px);
-    }
-    100%
-    {
-        transform: translateX(3980px);
-    }
-}
-
-.pumpkin01 {
-    position: absolute;
-    top: 100px;
-    right: 200px;
-    animation: animatePumpkin 8s ease-in-out infinite;
-    scale: 0.7;
-}
-
-.pumpkin02 {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-    animation: animatePumpkin 4s ease-in-out infinite;
-    scale: 0.5;
-}
-
-@keyframes animatePumpkin {
-    0%,100%
-    {
-        transform: translateY(-50px);
-    }
-    50%
-    {
-        transform: translateY(50px);
-    }
-}
-
-.spiderWeb {
-    z-index: 2;
-}
 
 .scores {
-    color: #1f07e7cf;;
+    color: #1f07e7cf;
     position: absolute;
     top: auto;
     display: flex;
@@ -105,14 +57,14 @@ body{
 
 #play-again {
     position: relative;
-    background-color: #382007;
-    color: #e07400;
-    top: 150px;
+    background-color: #1f07e7cf;
+    color: white;
+    top: 10px;
     width: 100px;
     height: 50px;
     border-radius: 50px;
-    box-shadow: 0 0 10px rgba(255, 136, 0, 0.8),
-    0 0 50px rgba(255, 136, 0, 0.8);
+    /* box-shadow: 0 0 10px rgba(255, 136, 0, 0.8), */
+    /* 0 0 50px rgba(255, 136, 0, 0.8); */
     cursor: pointer;
 }
 

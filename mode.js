@@ -25,3 +25,7 @@ const naturePlay = document.getElementById('naturePlay');
 naturePlay.onclick = () =>{
     location.href = "./natureGame.html";
 }
+
+// audio
+const bgmAudio = new Audio('./assests/modes-bgm.mp3')
+bgmAudio.play()

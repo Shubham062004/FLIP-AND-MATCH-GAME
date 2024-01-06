@@ -111,4 +111,69 @@ h1{
   }
   
   
-  
+  .innermode{
+    border-radius: 25px;
+    }
+
+    
+    
+@media screen and (max-width: 1300px){
+    .innermode{
+        height: 500px;
+        width: 225px;        
+    }  
+}
+
+@media screen and (max-width: 1000px){
+    .innermode{
+        height: 120px;
+        width: 800px;
+    }
+       
+    .modes{
+        flex-direction: column;
+    }
+           
+    .button{
+        display: none;
+   }
+
+   h1{
+       margin: 32px;
+   }
+}
+
+@media screen and (max-width: 800px){
+    .innermode{
+        height: 120px;
+        width: 675px;
+   }
+}  
+
+@media screen and (max-width: 675px){
+    .innermode{
+        height: 120px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .innermode{
+        height: 120px;
+        width: 400px;
+   }
+}  
+
+@media screen and (max-width: 420px){
+    .innermode{
+        height: 120px;
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .innermode{
+        height: 120px;
+        width: 250px;
+    }
+}

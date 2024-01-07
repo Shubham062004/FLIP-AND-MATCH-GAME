@@ -12,7 +12,6 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
     justify-content: center;
     background-image: url(assests/coder-bg.jpg);
     color: white;
@@ -26,9 +25,8 @@
 
 .scores span {
     font-size: 5em;
-    line-height: 70px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.336),
-    0 0 50px white;
+    line-height: 80px;
+    text-shadow: 0 0 10px rgb(32 25 69), 0 0 50px #28125b;
 }
 
 @keyframes animateText {
@@ -48,9 +46,9 @@
     position: relative;
     background-color: #382007;
     color: white;
-    top: 100px;
-    width: 100px;
-    height: 50px;
+    top: 50px;
+    width: 175px;
+    height: 75px;
     border-radius: 50px;
     box-shadow: 0 0 10px rgb(170,41,253),
     0 0 50px rgb(170,41,253);
@@ -58,27 +56,44 @@
 }
 
 #play-again p {
-    padding: 15px;
-    font-size: 1.1em;
+    font-size: 2em;
+    padding: 17px;
+    padding-left: 22px;
     text-shadow: none;
+}
+
+@media screen and (max-width: 700px){
+    .scores span{
+        font-size: 4em;
+    }
 }
 
 @media screen and (max-width: 530px){
     .scores span {
         font-size: 2.5em;
-        line-height: 25px;
+        line-height: 50px;
     }
+
     #play-again p {
-        font-size: 1em;
         top: 13px;
         left: 10px;
     }
-    /* .pumpkin01{
-        scale: 0.5;
-        top: 10px;
+}
+
+@media screen and (max-width: 350px){
+    .scores span {
+        font-size: 2em;
+        line-height: 25px;
     }
-    .pumpkin02{
-        scale: 0.4;
-        bottom: -60px;
-    } */
+
+    #play-again{
+        width: 100px;
+        height: 50px;
+    }
+    #play-again p {
+        font-size: 1em;
+        padding: 15px;
+        /* padding-left: 22px; */
+        text-shadow: none;
+    }
 }

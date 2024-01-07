@@ -6,42 +6,29 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-
-body{
     
-    background-image: url(./assests/nanture-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.banner {
-    position: absolute;
-    width: 100%;
+.scores {width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-
-.scores {
-    color: #1f07e7cf;
-    position: absolute;
+    font-family: "Nosifer", sans-serif;
     top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Fruktur';
-    animation: animateText 5s ease-in-out infinite;
     z-index: 20;
+    background-size: cover;
+    background-image: url(./assests/nanture-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1f07e7cf;
+
 }
 
 .scores span {
     font-size: 5em;
     line-height: 70px;
-    text-shadow: 0 0 10px white,
-    0 0 50px rgb(52,87,89);
+    text-shadow: 0 0 5px #d7d7cb, 0 0 50px rgb(27 34 46 / 11%);
 }
 
 @keyframes animateText {
@@ -59,39 +46,64 @@ body{
     position: relative;
     background-color: #1f07e7cf;
     color: white;
-    top: 10px;
-    width: 100px;
-    height: 50px;
+    top: 50px;
+    width: 175px;
+    height: 70px;
     border-radius: 50px;
-    /* box-shadow: 0 0 10px rgba(255, 136, 0, 0.8),
-    0 0 50px rgba(255, 136, 0, 0.8); */
     cursor: pointer;
 }
 
 #play-again p {
-    position: relative;
-    top: 15px;
-    left: 7px;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-shadow: none;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 1000px){
+    .scores span{
+        font-size: 3.5em;
+    }
+    
+    #play-again p {
+        padding: 18px;
+        padding-left: 23px;
+    }
+    
+    #play-again {
+        width: 125px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .scores span{
+        font-size: 2.5em;
+        line-height: 60px;
+    }
 }
 
 @media screen and (max-width: 530px){
     .scores span {
-        font-size: 2.5em;
-        line-height: 25px;
+        font-size: 2em;
+        line-height: 45px;
     }
+
     #play-again p {
         font-size: 1em;
-        top: 13px;
-        left: 10px;
+        padding: 19px;
+        padding-left: 24px;
     }
-    .pumpkin01{
-        scale: 0.5;
-        top: 10px;
+}
+
+@media screen and (max-width: 420px){
+    .scores span {
+        font-size: 1.5em;
+        line-height: 25px;
     }
-    .pumpkin02{
-        scale: 0.4;
-        bottom: -60px;
+
+    #play-again p {
+        padding: 20px;
+        padding-left: 25px;
     }
 }

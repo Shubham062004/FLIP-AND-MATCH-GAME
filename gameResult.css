@@ -7,41 +7,27 @@
     overflow: hidden;
 }
 
-body{
-    
+.scores {
     background-image: url(./assests/game-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.banner {
-    position: absolute;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-
-.scores {
-    color: #1f07e7cf;
-    position: absolute;
+    font-family: "Nosifer", sans-serif;
+    color: white;
+    background-repeat: no-repeat;
     top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Fruktur';
-    animation: animateText 5s ease-in-out infinite;
     z-index: 20;
+    background-size: cover;
 }
 
 .scores span {
-    font-size: 5em;
-    line-height: 70px;
-    text-shadow: 0 0 10px #e07400,
-    0 0 50px #e07400;
+        font-size: 4em;
+        line-height: 80px;
+    text-shadow: 0 0 10px #080d41, 0 0 200px #080d41;
 }
 
 @keyframes animateText {
@@ -59,39 +45,56 @@ body{
     position: relative;
     background-color: #1f07e7cf;
     color: white;
-    top: 10px;
-    width: 100px;
-    height: 50px;
+    top: 50px;
+    width: 175px;
+    height: 70px;
     border-radius: 50px;
-    /* box-shadow: 0 0 10px rgba(255, 136, 0, 0.8), */
-    /* 0 0 50px rgba(255, 136, 0, 0.8); */
     cursor: pointer;
 }
 
 #play-again p {
-    position: relative;
-    top: 15px;
-    left: 7px;
-    font-size: 1.1em;
+    font-size: 1.4em;
+    padding: 20px;
+    padding-left: 35px;
     text-shadow: none;
+}
+
+@media screen and (max-width: 700px){
+    .scores span{
+        font-size: 3em;
+        line-height: 55px;
+    }
+
+    #play-again p {
+        padding-left: 35px;
+    }
 }
 
 @media screen and (max-width: 530px){
     .scores span {
         font-size: 2.5em;
+        line-height: 50px;
+    }
+
+    #play-again p {
+        padding: 32px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .scores span {
+        font-size: 1.5em;
         line-height: 25px;
+    }
+
+    #play-again{
+        width: 125px;
+        height: 55px;
     }
     #play-again p {
         font-size: 1em;
-        top: 13px;
-        left: 10px;
-    }
-    .pumpkin01{
-        scale: 0.5;
-        top: 10px;
-    }
-    .pumpkin02{
-        scale: 0.4;
-        bottom: -60px;
+        padding: 20px;
+        padding-left: 25px;
     }
 }

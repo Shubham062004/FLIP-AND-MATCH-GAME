@@ -26,7 +26,6 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 85%;
-
 }
 
 .innermode{
@@ -119,14 +118,14 @@ h1{
     
 @media screen and (max-width: 1300px){
     .innermode{
-        height: 500px;
+        height: 480px;
         width: 225px;        
     }  
 }
 
 @media screen and (max-width: 1000px){
     .innermode{
-        height: 120px;
+        height: 100px;
         width: 800px;
     }
        
@@ -145,35 +144,35 @@ h1{
 
 @media screen and (max-width: 800px){
     .innermode{
-        height: 120px;
+        height: 100px;
         width: 675px;
    }
 }  
 
 @media screen and (max-width: 675px){
     .innermode{
-        height: 120px;
+        height: 100px;
         width: 500px;
     }
 }
 
 @media screen and (max-width: 500px){
     .innermode{
-        height: 120px;
+        height: 100px;
         width: 400px;
    }
 }  
 
 @media screen and (max-width: 420px){
     .innermode{
-        height: 120px;
+        height: 100px;
         width: 310px;
     }
 }
 
 @media screen and (max-width: 340px){
     .innermode{
-        height: 120px;
+        height: 100px;
         width: 250px;
     }
 }
